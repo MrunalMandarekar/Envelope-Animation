@@ -1,0 +1,95 @@
+body {
+  background-color: #FAE3D9;
+}
+
+.envelope {
+  width: 400px;
+  height: 300px;
+  position: relative;
+  margin-top: 250px;
+  margin-left:530px;
+  background-color: #1A508B;
+}
+
+.card {
+  width: 350px;
+  height: 300px;
+  position: absolute;
+  margin: auto;
+  right: 0;
+  left: 0;
+}
+
+.envelope .part {
+  position: absolute;
+  z-index: 10px;
+}
+
+.envelope .part-top {
+  border-top: 150px solid #1A508B;
+  border-left: 200px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-right: 200px solid transparent;
+  -webkit-filter: drop-shadow(0 1px 2px #000);
+  filter: drop-shadow(0 1px 2px grey);
+  transform-origin: center 0%;
+}
+
+.envelope .part-left {
+  border-top: 150px solid transparent;
+  border-left: 200px solid #2978B5;
+  border-bottom: 150px solid transparent;
+  border-right: 200px solid transparent;
+  -webkit-filter: drop-shadow(0 1px 2px #000);
+}
+
+.envelope .part-bottom {
+  border-top: 150px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 150px solid #8AB6D6;
+  border-right: 200px solid transparent;
+  -webkit-filter: drop-shadow(0 1px 2px #000);
+}
+
+.envelope .part-right {
+  border-top: 150px solid transparent;
+  border-left: 200px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-right: 200px solid #8AB6D6;
+  -webkit-filter: drop-shadow(0 1px 2px #000);
+}
+
+.envelope-animation {
+  -moz-animation: move1 0.5s linear forwards;
+  -webkit-animation: move1 0.5s linear forwards;
+}
+
+@-moz-keyframes move1 {
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+@-webkit-keyframes move1 {
+  100% {
+    transform: rotateX(-180deg);
+  }
+}
+
+.invitation-card {
+  -moz-animation: move2 2s linear forwards;
+  -webkit-animation: move2 2s linear forwards;
+}
+
+@-moz-keyframes move2 {
+  100% {
+    bottom: 120px;
+    z-index: 9;
+  }
+}
+
+@-webkit-keyframes move2 {
+  100% {
+    bottom: 120px;
+    z-index: 9;
+  }
+}
